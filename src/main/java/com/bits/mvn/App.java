@@ -8,7 +8,7 @@ public class App{
     private String name = "Hello";
     
     public String greet(String name){
-        return "hello " + name + "!"
+        return "hello " + name + "!";
     }
     
     public static void main(String args[]){
