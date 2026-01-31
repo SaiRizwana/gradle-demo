@@ -8,12 +8,13 @@ public class App{
     private String name = "Hello";
     
     public String greet(String name){
-        return "hello " + name;
+        return "hello " + name + "!"
     }
     
     public static void main(String args[]){
         App app = new App();
-        if(args.length >0){
+        logger.debug(3/0);
+        if(true){
             logger.info(app.greet(args[0]));
         }
     }
