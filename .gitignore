@@ -1,0 +1,12 @@
+#Gradle
+.gradle/
+build/
+gradle-8.6/
+*.zip
+
+#IDE
+.idea/
+*.iml
+
+#OS
+.DS_Store
