@@ -22,13 +22,7 @@ pipeline{
        stage('SonarQube Analysis'){
           steps{
               withSonarQubeEnv('SonarQube'){
-                  sh '''
-                  ./gradlew sonar \
-                  -Dsonar.projectKey=gradle-demo \
-                  -Dsonar.projectName=gradle-demo \
-                  -Dsonar.java.binaries=build \
-                  -Dsonar.coverage.jacoco.xmlReportsPaths=build/reports/jacoco/test/jacocoTestReport.xml
-                  '''
+                  sh './gradlew sonarqube'
               }
           }
        }
